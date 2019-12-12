@@ -1,0 +1,460 @@
+<html lang="en"><head>
+	<title>Tobacco Regulatory Science Knowledge Center</title>
+	<meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="vendorlibs/font-awesome-pro/css/all.min.css">
+	<link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/trs.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<style>
+
+.landing-tile-txt {
+    line-height: 1.5;
+    /* max-height: 8rem; */
+    overflow: visible;
+
+}
+
+.tile-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    position: relative;
+    z-index: 1;
+    max-height: calc(100% - 1.25rem);
+    overflow: visible;
+    border-radius: inherit;
+    height: 20rem;
+}
+
+.sec-landing-tile {
+    width: calc(25% - 0rem);
+    height: 20rem;
+    background: rgba(255, 255, 255, 1);
+    margin: 1em 1.6em 1em 0em;
+    min-width: 255px;
+    border-radius: 1rem;
+    transition: transform 0.4s;
+    position: relative;
+    z-index: 0;
+    -webkit-box-shadow: 0px 0px 23px -7px rgba(0,0,0,0.83);
+    -moz-box-shadow: 0px 0px 23px -7px rgba(0,0,0,0.83);
+    box-shadow: 0px 0px 23px -7px rgba(0,0,0,0.83);
+}
+
+
+</style>
+
+<body>
+	<div class="container-fluid">
+		<section class="top-search-container" data-attached="globalSearch" data-type="input">
+			<div class="top-search-input-wrapper">
+				<input type="text" tabindex="-1" placeholder="Search for a title, author, keyword, etc..." class="form-control" aria-label="Global Search">
+				<span tabindex="-1" role="button"><i class="fas fa-search t-navy f-18"></i></span>
+			</div>
+			<span tabindex="-1" role="button" data-event="closeTopSearch"><i class="fal fa-times"></i></span>
+		</section>
+		<header class="el-S">
+			<div class="hdr-container">
+				<div class="hdr-left">
+					<a href=""><img class="logo" src="assets/logo_TRS.svg" alt="TRS Logo"></a>
+				</div>
+				<div class="hdr-right">
+					<ul class="nav nav-pills" id="myTab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#announcements" role="button" aria-haspopup="true" aria-expanded="false">Announcements</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Sample</a>
+								<a class="dropdown-item" href="#">Sample</a>
+								<a class="dropdown-item" href="#">Sample</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Sample</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#opportunities" role="button" aria-haspopup="true" aria-expanded="false">Opportunities</a>
+							<div class="dropdown-menu">
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#learningLibrary" role="button" aria-haspopup="true" aria-expanded="false">Learning Library</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Sample</a>
+								<a class="dropdown-item" href="#">Sample</a>
+								<a class="dropdown-item" href="#">Sample</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Sample</a>
+							</div>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#tcors" role="button" aria-haspopup="true" aria-expanded="false">TCORS 2.0</a>
+							<div class="dropdown-menu">
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#groups" role="button">Groups</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#careerNetwork" role="button" aria-haspopup="true" aria-expanded="false">Career Network</a>
+							<div class="dropdown-menu">
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-custom-btn" href="#login" role="button">Member Log-in</a>
+						</li>
+						<li class="nav-item" data-event="openTopSearch">
+							<i class="fas fa-search t-navy f-16"></i>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="right-nav-tabs-overlay"></div>
+		<div class="right-nav-tabs">
+			<span class="close" role="button"><i class="fal fa-times"></i></span>
+			<nav>
+				<div class="nav nav-tabs" id="right-nav-tab" role="tablist">
+					<a class="nav-item nav-link bg-green" id="overlay-contact" data-toggle="tab" href="#right-nav-contact" role="tab" aria-controls="right-nav-contact" aria-selected="false">Contact Us<i class="far fa-envelope ml-1"></i></a>
+					<a class="nav-item nav-link bg-yellow" id="overlay-new" data-toggle="tab" href="#right-nav-new" role="tab" aria-controls="right-nav-new" aria-selected="false">What's New<i class="far fa-columns ml-1"></i></a>
+					<a class="nav-item nav-link bg-blue" id="overlay-faq" data-toggle="tab" href="#right-nav-faq" role="tab" aria-controls="right-nav-faq" aria-selected="false">FAQs<i class="far fa-question-circle ml-1"></i></a>
+				</div>
+			</nav>
+			<div class="tab-content" id="right-nav-tabContent">
+				<div class="tab-pane fade" id="right-nav-contact" role="tabpanel" aria-labelledby="overlay-contact">
+					<div class="section-hdr t-navy text-center">Contact Us</div>
+				</div>
+				<div class="tab-pane fade" id="right-nav-new" role="tabpanel" aria-labelledby="overlay-new">
+					<div class="section-hdr t-navy text-center">What's New</div>
+				</div>
+				<div class="tab-pane fade" id="right-nav-faq" role="tabpanel" aria-labelledby="overlay-faq">
+					<div class="section-hdr t-navy text-center">FAQs</div>
+					<ul class="default-tile-list-100">
+						<li class="default-tile">
+							<div class="tile-container">
+								<p class="sub-hdr">What is the Tobacco Regulatory Science (TRS) Knowledge Center?</p>
+								<p>The TRS Knowledge Center provides the following features:
+									â€¢ A wealth of online training materials and resources related to TRS and TCORS curriculum
+									domains and competencies.
+									â€¢ An up-to-date listing of TRS meetings, CASEL webinars, public workshops, and other TRS events.
+									â€¢ An archive of CASEL Digests, CASEL webinars, and CASEL-affiliated special issue publications
+									â€¢ A list of recent opportunities including job/fellowship positions, funding opportunities, call for
+									papers/abstracts, and calls for public comment.
+									â€¢ An information hub for TCORS researchers, trainees, and staff
+									â€¢ A platform for CASEL special interest group (SIG) and working group (WG) members to interact
+									and receive updates about ongoing activities</p>
+								</div>
+							</li>
+							<li class="default-tile">
+								<div class="tile-container">
+									<p class="sub-hdr">Who uses the TRS Knowledge Center?</p>
+									<p>The TRS Knowledge Center is currently available for NIH Tobacco Centers of Regulatory Science
+										(TCORS) researchers and trainees.</p>
+									</div>
+								</li>
+								<li class="default-tile">
+									<div class="tile-container">
+										<p class="sub-hdr">How do I register for an event?</p>
+										<p>Go to the Announcements, then Meetings and Events page. Search the list for the event of
+											interest. Click on the event and there will be information about how to register for the event.</p>
+										</div>
+									</li>
+									<li class="default-tile">
+										<div class="tile-container">
+											<p class="sub-hdr">How do I access a training course or presentation?</p>
+											<p>To access a course, go to the Learning Library. You can either search for the course using the
+												Search/Filter function, or you can browse the listing of materials. Click on the course title
+												launch the course or presentation.</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<main>
+							<section data-attached="login">
+								<div class="wrapper bg-navy py-5 position-relative">
+									<div class="bg-overlay-blue-arrow"></div>
+									<div class="container">
+										<a href="#" class="default-link--dark"><i class="fal fa-arrow-left mr-2"></i>Back to Home</a>
+										<div class="login-box my-4">
+											<div class="login-input-wrapper">
+												<div class="login-input">
+													<label for="username" class="sub-hdr">Username</label>
+													<input id="username" type="username" maxlength="50" size="8" id="uname" class="form-control access" placeholder="Username" autofocus="autofocus">
+												</div>
+												<div class="login-input">
+													<label for="password" class="sub-hdr">Password</label>
+													<input id="passowrd" type="password" maxlength="50" size="8" id="password" class="form-control access" placeholder="Password" autocomplete="false">
+												</div>
+												<div class="login-link">
+													<a class="default-link f-12 float-right" href="#">Forgot your password?</a>
+												</div>
+											</div>
+											<button type="submit" class="button-default button--green f-500 py-2" value="logIn">Log-In</button>
+										</div>
+										<div class="w-rem-40 mx-auto text-center">
+											<div class="section-hdr t-white">
+												Membership Benefits
+											</div>
+											<p class="t-white">
+												Lorem ipsum dolor sit amet,
+												ut laoreet dolore
+
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="pb-5 container">
+									<ul class="sec-landing-tile-list sec-landing-tile-list--dark">
+										<li class="sec-landing-tile">
+											<div class="tile-container">
+												<div class="landing-tile-icon">
+													<i class="fal fa-address-book t-orange"></i>
+												</div>
+												<div class="landing-tile-hdr t-navy f-700 f-24">
+													Meetings &amp; Events
+												</div>
+												<div class="landing-tile-txt t-navy f-300">
+													Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetuer
+														adipiscing elit, sed diam nonummy nibh
+														uismod tincidunt ut laoreet dolore magna	Lorem ipsum dolor sit amet, consectetuer
+
+												</div>
+											</div>
+										</li>
+										<li class="sec-landing-tile">
+											<div class="tile-container">
+												<div class="landing-tile-icon">
+												<i class="fal fa-tachometer-alt-fastest t-orange"></i>
+
+												</div>
+												<div class="landing-tile-hdr t-navy f-700 f-24">
+													CASEL Digest
+												</div>
+												<div class="landing-tile-txt t-navy f-300">
+
+													Lorem ipsum dolor sit amet, consectetuer
+													adipiscing elit, sed diam nonummy nibh
+													uismod tincidunt ut laoreet dolore magna
+
+												</div>
+
+											</div>
+										</li>
+										<li class="sec-landing-tile">
+
+											<div class="tile-container">
+
+												<div class="landing-tile-icon">
+
+													<i class="fal fa-plane t-orange"></i>
+
+												</div>
+
+												<div class="landing-tile-hdr t-navy f-700 f-24">
+
+													Interest &amp; Working Groups
+
+												</div>
+												<div class="landing-tile-txt t-navy f-300">
+
+													Lorem ipsum dolor sit amet, consectetuer
+													adipiscing elit, sed diam nonummy nibh
+													uismod tincidunt ut laoreet dolore magna
+												</div>
+
+											</div>
+										</li>
+										<li class="sec-landing-tile">
+											<div class="tile-container">
+												<div class="landing-tile-icon">
+													<i class="fal fa-address-book t-orange"></i>
+
+												</div>
+
+												<div class="landing-tile-hdr t-navy f-700 f-24">
+
+													TRS Reading List
+
+												</div>
+
+												<div class="landing-tile-txt t-navy f-300">
+
+													Lorem ipsum dolor sit amet, consectetuer
+													adipiscing elit, sed diam nonummy nibh
+													uismod tincidunt ut laoreet dolore magna
+
+												</div>
+
+											</div>
+										</li>
+										<li class="sec-landing-tile">
+
+											<div class="tile-container">
+
+												<div class="landing-tile-icon">
+
+													<i class="fal fa-steering-wheel t-orange"></i>
+
+												</div>
+
+												<div class="landing-tile-hdr t-navy f-700 f-24">
+													All Courses&amp; Materials
+												</div>
+
+												<div class="landing-tile-txt t-navy f-300">
+
+													Lorem ipsum dolor sit amet, consectetuer
+													adipiscing elit, sed diam nonummy nibh
+													uismod tincidunt ut laoreet dolore magna
+												</div>
+
+											</div>
+
+										</li>
+										<li class="sec-landing-tile">
+											<div class="tile-container">
+												<div class="landing-tile-icon">
+
+													<i class="fal fa-passport t-orange"></i>
+
+												</div>
+
+												<div class="landing-tile-hdr t-navy f-700 f-24">
+
+													CASEL/CECTR Webinars
+
+												</div>
+
+												<div class="landing-tile-txt t-navy f-300">
+
+													Lorem ipsum dolor sit amet, consectetuer
+													adipiscing elit, sed diam nonummy nibh
+													uismod tincidunt ut laoreet dolore magna
+													Lorem ipsum dolor sit amet, consectetuer
+
+												</div>
+
+											</div>
+
+										</li>
+										<li class="sec-landing-tile">
+											<div class="tile-container">
+												<div class="landing-tile-icon">
+
+													<i class="fal fa-passport t-orange"></i>
+
+												</div>
+
+												<div class="landing-tile-hdr t-navy f-700 f-24">
+													TCORS 2.0
+
+												</div>
+
+												<div class="landing-tile-txt t-navy f-300">
+
+													Lorem ipsum dolor sit amet, consectetuer
+													adipiscing elit, sed diam nonummy nibh
+													uismod tincidunt ut laoreet dolore magna
+													Lorem ipsum dolor sit amet, consectetuer
+													adipiscing elit, sed diam nonummy nibh
+
+												</div>
+											</div>
+
+										</li>
+										<li class="sec-landing-tile">
+
+											<div class="tile-container">
+
+												<div class="landing-tile-icon">
+
+													<i class="fal fa-passport t-orange"></i>
+
+												</div>
+
+												<div class="landing-tile-hdr t-navy f-700 f-24">
+
+													Career Network
+
+												</div>
+
+												<div class="landing-tile-txt t-navy f-300">
+
+													Lorem ipsum dolor sit amet, consectetuer
+													adipiscing elit, sed diam nonummy nibh
+													uismod tincidunt ut laoreet dolore magna
+													Lorem ipsum dolor sit amet, consectetuer
+
+												</div>
+											</div>
+
+										</li>
+										<li class="sec-landing-tile">
+
+											<div class="tile-container">
+
+												<div class="landing-tile-icon">
+													<i class="fal fa-passport t-orange"></i>
+
+												</div>
+
+												<div class="landing-tile-hdr t-navy f-700 f-24">
+
+													Members Portal
+
+												</div>
+
+												<div class="landing-tile-txt t-navy f-300">
+
+													Lorem ipsum dolor sit amet, consectetuer
+													adipiscing elit, sed diam nonummy nibh
+													uismod tincidunt ut laoreet dolore magna
+													Lorem ipsum dolor sit amet, consectetuer
+													adipiscing elit, sed diam nonummy nibh
+												</div>
+
+											</div>
+
+										</li>
+									</ul>
+									</div>
+								</section>
+
+							</main>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+			<!-- <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+			<script type="text/javascript" src="vendorlibs/popper.min.js"></script>
+			<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script> -->
+			<script type="text/javascript" src="js/trs.js"></script>
+
+		</body></html>

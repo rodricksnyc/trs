@@ -1,0 +1,576 @@
+<html lang="en"><head>
+	<title>Tobacco Regulatory Science Knowledge Center</title>
+	<meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="vendorlibs/font-awesome-pro/css/all.min.css">
+	<link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/trs.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<style>
+
+.landing-tile-txt {
+	line-height: 1.5;
+	overflow: visible;
+
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+	-webkit-appearance: button;
+	border-radius: 27px;
+}
+
+#sec-tabs .nav-link .nav-link-icon {
+	font-size: 1.6rem;
+	line-height: 1.6;
+	margin-bottom: .3em;
+}
+
+.section-search-container #sec-tabs.nav-pills .nav-link.active, .section-search-container #sec-tabs.nav-pills .show>.nav-link {
+	border-top: 4px solid #FF6445;
+}
+
+.section-search-container {
+	display:none;
+}
+
+.tile-container {
+	background: rgba(255, 255, 255, 0.9);
+	padding: 1rem;
+	position: relative;
+	z-index: 1;
+	max-height: calc(100% - 1.25rem);
+	overflow: visible;
+	border-radius: inherit;
+	height: 19rem;
+}
+
+#sec-tabs .nav-link {
+	color: #023d4d;
+	background: rgba(2, 61, 77, 0.15);
+	line-height: 1;
+	padding: .5rem .5rem .5rem .5rem;
+	min-height: 5rem;
+	border-radius: 0;
+	box-shadow: inset 2px -2px 5px rgba(0, 0, 0, 0.15);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: 0.3s all;
+}
+
+.sec-landing-tile {
+	width: calc(25% - 0rem);
+	height: 20rem;
+	background: rgba(255, 255, 255, 1);
+	margin: 1em 1.6em 1em 0em;
+	min-width: 255px;
+	border-radius: 1rem;
+	transition: transform 0.4s;
+	position: relative;
+	z-index: 0;
+	-webkit-box-shadow: 0px 0px 23px -7px rgba(0,0,0,0.83);
+	-moz-box-shadow: 0px 0px 23px -7px rgba(0,0,0,0.83);
+	box-shadow: 0px 0px 23px -7px rgba(0,0,0,0.83);
+}
+
+p {
+	margin-bottom:.5rem;
+}
+
+.list-controls .button-group {
+	margin-left: 0.5rem;
+	margin-top: -.4em;
+}
+
+.list-filter-left .filter-container.thirty {
+	width: 30%;
+	margin: 0;
+	padding: 0.5rem 1rem 1rem;
+	background-color: rgba(255, 255, 255, 1);
+	position: relative;
+	display:flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.wrapper-filter-paging.seventy {
+	width:70%;
+}
+
+p {
+	font-size:14px;
+}
+
+.list-filter-left .filter-container {
+	background:transparent !important;
+}
+
+#searchResultsNumber {
+	font-weight: 100;
+	color:white;
+}
+
+#slideFilter:hover {
+	cursor: grab;
+
+}
+
+
+
+.section-search-container .filter-attr-list {
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 1.25rem 1rem;
+	background-color: #ffffff;
+}
+
+.button-group .button-default {
+	border-radius: unset;
+	margin: 0;
+	font-size: 14px;
+	padding: 0.35rem 0.65rem;
+	min-width: 4rem;
+}
+
+.default-tile-list-100 .tile-hdr-main {
+	width: 72%;
+	max-height: unset;
+}
+
+.removeTag {
+	margin-left:5px;
+}
+
+.w-r-icon {
+	padding-right: 1.25rem;
+	position: relative;
+	display: inline-block;
+	font-size: 14px;
+}
+
+.neonGreen {
+	color: #42FFA1;
+	line-height: 1.2;
+	font-weight: 400;
+	font-size:12px;
+}
+
+.tag-value {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.fal.fa-times {
+	color:#023d4d;
+}
+
+.section-search-container .filter-attr-list li .tag {
+	display: flex;
+	align-items: baseline;
+	flex-wrap: wrap;
+}
+
+
+.neonOutline {
+	border:1px solid #42FFA1;
+}
+
+#smallerFont {
+	font-size: 12px;
+	padding: .1rem .2rem;
+	min-width: inherit;
+	width: 2.1rem;
+	font-weight: 500;
+
+}
+
+.downloadResults {
+	color: #42FFA1;
+	padding: .5rem 2.5rem;
+	background: transparent;
+	box-shadow: none;
+	margin: 0rem;
+	border-radius: 2rem;
+	font-weight: 400;
+	width: 18em;
+	margin-right: 0rem;
+	border: 1px solid;
+	font-size: 13px;
+	margin-top: 2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button-group.noWrap {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	position: relative;
+	top: 92px;
+	justify-content: flex-end;
+}
+
+.addClear {
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+	width:15em;
+}
+
+.downloadResults .fa-file-download {
+	margin-left:5px;
+}
+
+.filter-attr-list.results  {
+	margin-bottom:0em;
+}
+
+.filter-attr-list.results li {
+	padding: .25rem .5rem .25rem .5rem;
+	margin: 0rem 1rem 0.7rem 0;
+	background: #e4d0fb;
+	border-radius: 2rem;
+	color: #023d4d;
+	cursor: pointer;
+	width:18em;
+}
+
+.p1 {
+	padding-top:.8em;
+}
+
+.mNeg {
+	margin-left:-1em;
+	margin-right:1em;
+}
+
+.fR {
+	float:right;
+	padding:3px;
+}
+
+@media (min-width: 1200px) {
+
+	.container.largeWidth {
+		max-width: 1800px;
+	}
+
+}
+
+@media (max-width:1360px) {
+	.downloadResults {
+		width:15em;
+		padding: .5rem 1rem;
+	}
+	.addClear {
+		width:11em;
+	}
+
+	.filter-attr-list.results li {
+		padding: .25rem .5rem .25rem .5rem;
+		margin: 0rem -1rem 0.7rem 0;
+		background: #e4d0fb;
+		border-radius: 2rem;
+		color: #023d4d;
+		cursor: pointer;
+		width: 18em;
+	}
+
+	.mNeg {
+		margin-left:0em;
+		margin-right:0em;
+	}
+
+
+}
+
+@media (max-width: 1199px) {
+	.container.largeWidth {
+		max-width: 1160px;
+	}
+
+	.filter-attr-list {
+		display: block;
+		width: 100%;
+
+	}
+	.filter-attr-list.results li {
+		width: 13em;
+	}
+	.downloadResults {
+		width: 14em;
+		padding: .5rem 0.5rem;
+	}
+
+	.button-group.noWrap {
+		top: 114px;
+
+	}
+
+
+}
+
+@media (max-width: 768px) {
+	.container.largeWidth {
+		max-width: 1000px;
+	}
+
+	.wrapper-filter-paging {
+		padding-left:1em;
+		padding-right:1em;
+	}
+
+
+}
+
+</style>
+
+<body>
+	<div class="container-fluid">
+		<main>
+			<section data-attached="login">
+				<div class="wrapper bg-navy py-5 position-relative">
+					<div class="bg-overlay-blue-arrow"></div>
+					<div class="container largeWidth">
+						<div class="row">
+							<div class="col-lg-1 col-lg-offset-1 col-md-12 col-sm-12 p1">
+								<div class="button-group noWrap list-sorting-buttons t-white">
+									<button id="smallerFont" class="button-default button-flat button--green active neonOutline">AND</button>
+									<button id="smallerFont" class="button-default button-flat button--green neonOutline">OR</button>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-12 col-sm-12 p1 mNeg">
+								<div class="section-hdr t-white">Results <span id="searchResultsNumber">(9)</span></div>
+								<ul class="filter-attr-list results">
+									<li data-tag-id="999" class="selected"><i class="fal fa-pen-fancy mr-1 active"></i>Connor Winchester<i class="fal fa-eye fR"></i></li>
+									<li data-tag-id="888" class="selected"><i class="fal fa-book mr-1 active"></i>Journal Name<i class="fal fa-eye fR"></i></li>
+								</ul>
+								<div class="addClear">
+									<p id="slideFilter" class="neonGreen">+ add</p>
+									<p class="neonGreen">clear all</p>
+								</div>
+								<div class="downloadResults">Download Results<i class="fal fa-file-download"></i></div>
+							</div>
+
+							<div class="col-lg-8 col-md-12 col-sm-12 p1">
+								<div class="section-search-container pt-3 pr-2 px-2">
+									<div class="wrapper bg-white-90 position-relative mb-5 el-S">
+										<ul class="nav nav-pills nav-justified mb-3" id="sec-tabs" role="tablist">
+											<li class="nav-item">
+												<a class="nav-link active" href="#publications-filter-tab-content" aria-controls="publications-filter-tab-content" data-toggle="pill" role="tab" aria-selected="false" data-search-criteria="all">
+													<span class="nav-link-icon"><i class="fal"></i></span>
+													<p class="nav-link-title">All</p></a></li>
+													<li class="nav-item">
+														<a class="nav-link " href="#publications-filter-tab-content" aria-controls="publications-filter-tab-content" data-toggle="pill" role="tab" aria-selected="false" data-search-criteria="title"><span class="nav-link-icon">
+															<i class="fal fa-font"></i></span>
+															<p class="nav-link-title">Title</p>
+														</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="#publications-filter-tab-content" aria-controls="publications-filter-tab-content" data-toggle="pill" role="tab" aria-selected="false" data-search-criteria="authors"><span class="nav-link-icon"><i class="fal fa-pen-fancy"></i></span><p class="nav-link-title">Author</p></a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link " href="#publications-filter-tab-content" aria-controls="publications-filter-tab-content" data-toggle="pill" role="tab" aria-selected="false" data-search-criteria="journal"><span class="nav-link-icon"><i class="fal fa-book"></i></span><p class="nav-link-title">Journal</p></a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link " href="#publications-filter-tab-content" aria-controls="publications-filter-tab-content" data-toggle="pill" role="tab" aria-selected="false" data-search-criteria="award_type"><span class="nav-link-icon"><i class="fal fa-award"></i></span><p class="nav-link-title">Grant</p></a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link " href="#publications-filter-tab-content" aria-controls="publications-filter-tab-content" data-toggle="pill" role="tab" aria-selected="false" data-search-criteria="institution"><span class="nav-link-icon"><i class="fal fa-building"></i></span><p class="nav-link-title">Institution</p></a>
+													</li>
+												</ul>
+												<div class="tab-content" id="sec-tabs-content">
+													<div class="tab-pane fade show active" id="publications-filter-tab-content" role="tabpanel" data-search-criteria="all">
+														<div class="filter-container">
+															<div class="sub-hdr t-navy text-center"><i class="fal fa-filter mr-1"></i>Apply up to <span class="value t-navy filter-upto">5</span> more filters</div>
+															<ul class="filter-attr-list search-list hidden">
+																<li>
+																	<div class="tag">
+																		<div class="filter-btn-group"> current</div>
+																	</div>
+																</li>
+															</ul>
+														</div>
+														<div class="input-container">
+															<div class="button-group filter-btn-group input-operators hidden"><button class="button-default button-outlined active" value="AND">AND</button>
+																<button class="button-default button-outlined" value="OR">OR</button>
+															</div>
+															<div class="input-wrapper">
+																<input type="text" id="term_input" placeholder="Search for a title, author, keyword, etc..." class="form-control" aria-label="Filter Search">
+																<button class="button-default button-icon button--green critera-plus"><i class="fal fa-plus"></i></button>
+																<div class="dropdown-wrapper">
+																	<ul class="dropdown-item-list search-suggestions">
+																		<li class="dropdown-item--custom"></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<form id="journal-search-area" method="post">
+															<button class="button-default f-500 button--green submit-btn" type="button">Apply</button>
+															<input value="[]" id="searchFor" name="searchFor" type="hidden">
+															<input value="" id="resultOptions" name="resultOptions" type="hidden">
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="wrapper-filter-paging">
+											<div class="list-controls mt-3 mb-n3">
+												<div class="list-controls-paging t-white">
+													<p class="f-500 t-white">Show:</p>
+													<div class="button-group list-paging-buttons t-white">
+														<button class="button-default button-flat button--green active" value="10">10</button>
+														<button class="button-default button-flat button--green " value="20">20</button>
+														<button class="button-default button-flat button--green " value="50">50</button>
+														<button class="button-default button-flat button--green " value="100">100</button>
+													</div>
+												</div>
+
+												<div class="list-controls-sorting">
+													<p class="f-500 t-white">Sort By:</p>
+													<div class="button-group list-sorting-buttons t-white">
+														<button value="pub_date" class="button-default button-flat button--green active">Newest</button>
+														<button value="title" class="button-default button-flat button--green ">Article Title</button>
+														<button value="pub_name" class="button-default button-flat button--green ">Journal Name</button>
+													</div>
+												</div>
+											</div>
+
+											<ul class="publication-list default-tile-list-100 px-2 py-1">
+												<li class="default-tile publication-tile">
+													<div class="tile-container">
+														<div class="tile-hdr">
+															<p class="tile-hdr-main">Educational Attainment and Exercise Frequency in American </p>
+															<a class="link w-r-icon" href="" target="_blank">Go to Resource<i class="fal fa-external-link-alt fa-external-link"></i></a></div>
+															<div class="tile-content">
+																<p><span class="f-500">Journal: </span>Womens Health Bull</p>
+																<p><span class="f-500">Publication Date: </span>Sep 2019</p>
+																<p><span class="f-500">Author: </span>S. Assari</p>
+																<p><span class="f-500">Citation: </span>Womens Health Bull. 2019. 6: . doi:10.5812/whb.87413 Epub 2019 Sep 4.</p>
+																<p><span class="f-500">Grantee Institution: </span>University of Michigan</p>
+																<p><span class="f-500">Grant: </span>U54CA229974</p>
+																<p><span class="f-500">PMID: </span>31552286</p>
+															</p>
+														</div>
+													</li>
+													<li class="default-tile publication-tile">
+														<div class="tile-container">
+															<div class="tile-hdr">
+																<p class="tile-hdr-main">Educational Attainment and Exercise </p>
+																<a class="link w-r-icon" href="" target="_blank">Go to Resource<i class="fal fa-external-link-alt fa-external-link"></i></a></div>
+																<div class="tile-content">
+																	<p><span class="f-500">Journal: </span>Womens Health Bull</p>
+																	<p><span class="f-500">Publication Date: </span>Sep 2019</p>
+																	<p><span class="f-500">Author: </span>S. Assari</p>
+																	<p><span class="f-500">Citation: </span>Womens Health Bull. 2019. 6: . doi:10.5812/whb.87413 Epub 2019 Sep 4.</p>
+																	<p><span class="f-500">Grantee Institution: </span>University of Michigan</p>
+																	<p><span class="f-500">Grant: </span>U54CA229974</p>
+																	<p><span class="f-500">PMID: </span>31552286</p>
+																</p>
+															</div>
+														</li>
+														<li class="default-tile publication-tile">
+															<div class="tile-container">
+																<div class="tile-hdr">
+																	<p class="tile-hdr-main">Educational Attainment and Exercise</p>
+																	<a class="link w-r-icon" href="" target="_blank">Go to Resource<i class="fal fa-external-link-alt fa-external-link"></i></a></div>
+																	<div class="tile-content">
+																		<p><span class="f-500">Journal: </span>Womens Health Bull</p>
+																		<p><span class="f-500">Publication Date: </span>Sep 2019</p>
+																		<p><span class="f-500">Author: </span>S. Assari</p>
+																		<p><span class="f-500">Citation: </span>Womens Health Bull. 2019. 6: . doi:10.5812/whb.87413 Epub 2019 Sep 4.</p>
+																		<p><span class="f-500">Grantee Institution: </span>University of Michigan</p>
+																		<p><span class="f-500">Grant: </span>U54CA229974</p>
+																		<p><span class="f-500">PMID: </span>31552286</p>
+																	</p>
+																</div>
+															</li>
+															<li class="default-tile publication-tile">
+																<div class="tile-container">
+																	<div class="tile-hdr">
+																		<p class="tile-hdr-main">Educational Attainment and Exercise Frequency Returns</p>
+																		<a class="link w-r-icon" href="" target="_blank">Go to Resource<i class="fal fa-external-link-alt fa-external-link"></i></a></div>
+																		<div class="tile-content">
+																			<p><span class="f-500">Journal: </span>Womens Health Bull</p>
+																			<p><span class="f-500">Publication Date: </span>Sep 2019</p>
+																			<p><span class="f-500">Author: </span>S. Assari</p>
+																			<p><span class="f-500">Citation: </span>Womens Health Bull. 2019. 6: . doi:10.5812/whb.87413 Epub 2019 Sep 4.</p>
+																			<p><span class="f-500">Grantee Institution: </span>University of Michigan</p>
+																			<p><span class="f-500">Grant: </span>U54CA229974</p>
+																			<p><span class="f-500">PMID: </span>31552286</p>
+																		</p>
+																	</div>
+																</li>
+															</ul>
+
+														</div>
+													</div>
+												</div>
+												<div class="pb-5 container">
+												</div>
+
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</section>
+				</main>
+			</div>
+
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+			<!-- <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+			<script type="text/javascript" src="vendorlibs/popper.min.js"></script>
+			<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script> -->
+			<script type="text/javascript" src="js/trs.js"></script>
+
+			<script>
+
+			$('#slideFilter').on('click', function() {
+				$('.section-search-container').slideToggle()
+			})
+
+			$('.tag').on('click', '.removeTag', function() {
+				console.log("hi there")
+				$(this).closest('.tag-value').remove();
+			})
+
+
+			$('.critera-plus').on('click', function() {
+				var value = $('#term_input').val();
+				$('.tag').append(`<div class="tag-value"><i class="fal fa-filter mr-1"></i> ${value} <div class="removeTag"><i class="fal fa-times ml-1"></i></div></div>`);
+				$('.filter-attr-list.search-list').removeClass('hidden');
+				$('.input-operators').removeClass('hidden');
+			})
+
+
+			</script>
+
+		</body>
+		</html>
